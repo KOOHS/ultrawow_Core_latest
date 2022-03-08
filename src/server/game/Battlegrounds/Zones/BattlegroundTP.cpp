@@ -74,7 +74,7 @@ void BattlegroundTP::PostUpdateImpl(uint32 diff)
     else if (GetElapsedTime() > uint32(m_minutesElapsed * MINUTE * IN_MILLISECONDS))
     {
         ++m_minutesElapsed;
-        UpdateWorldState(STATE_TIMER, 28 - m_minutesElapsed);
+        UpdateWorldState(STATE_TIMER, 27 - m_minutesElapsed);
     }
 
     if (m_flagState[BG_TEAM_ALLIANCE] == FLAG_STATE_WAIT_RESPAWN)
